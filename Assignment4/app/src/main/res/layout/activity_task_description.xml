@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.messenger.assignment4.TaskDetails"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="1"
+    android:id="@+id/ID_status">
+
+    <TextView
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_title_label"
+        style="?android:listSeparatorTextViewStyle"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/crime_title_hint"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        style="?android:listSeparatorTextViewStyle"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/Edittext_Task_Details"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Enter the task Description"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="doneClicked"
+        android:id="@+id/doneBtn"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:background="?android:attr/colorPrimaryDark"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="Status : Incomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Id_status"
+        android:textSize="?android:attr/dialogPreferredPadding"
+        android:textColor="@android:color/background_light" />
+
+
+</LinearLayout>
